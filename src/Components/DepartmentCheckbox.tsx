@@ -46,7 +46,7 @@ export function DepartmentCheckbox(){
             <Typography sx={{textAlign : "center", mt:5}} variant="h6">Department</Typography>
             {departments.map(dept => {
                 return (
-                    <Box sx={{m:3}}>
+                    <Box key={dept.department} sx={{m:3}}>
                         <Accordion>
                             <AccordionSummary
                                 expandIcon={<ArrowDropDownIcon/>}
@@ -66,7 +66,7 @@ export function DepartmentCheckbox(){
                                 {
                                     dept.sub_departments.map(subdept=>{
                                         return(
-                                            <Box sx={{ml:3}}>
+                                            <Box key={subdept} sx={{ml:3}}>
                                                 <FormControlLabel
                                                     control={
                                                         <Checkbox
