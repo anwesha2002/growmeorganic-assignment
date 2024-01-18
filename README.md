@@ -2,6 +2,7 @@
 
 This application is a React-based web application developed using TypeScript and Material-UI (MUI). It fetches data from an API and displays it in a data table. The key feature of this application is the ability for users to select department and sub-departments using checkboxes. On selecting a department, all the sub-departments under it gets automatically selected, and vice versa.
 
+
 ![Screenshot 2024-01-18 073626](https://github.com/anwesha2002/growmeorganic-assignment/assets/116761608/396733f5-9cc0-441f-a001-504365e4ff80)
 
 ## Features
