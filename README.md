@@ -27,11 +27,11 @@ This application is a React-based web application developed using TypeScript and
  - Clone the repository:
 
    ```bash
-       git clone https://github.com/your-username/your-repo.git
+    https://github.com/anwesha2002/growmeorganic-assignment.git
 
  - Navigate to the project directory:
 
-       cd your-repo
+       cd growmeorganic-assignment
     
  - Install dependencies:
 
