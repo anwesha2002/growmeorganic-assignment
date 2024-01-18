@@ -20,8 +20,8 @@ This application is a React-based web application developed using TypeScript and
 ## Getting Started
 
 ### Prerequisites
- -- Node.js installed
- -- npm (Node Package Manager) installed
+ - Node.js installed
+ - npm (Node Package Manager) installed
  
 ### Installation
  - Clone the repository:
