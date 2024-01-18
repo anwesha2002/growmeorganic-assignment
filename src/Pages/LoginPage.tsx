@@ -1,7 +1,7 @@
 import {
+    Box,
     Button,
-
-    Card,
+    Card, CardContent,
     Grid, Typography,
 } from "@mui/material";
 import {LoginForm} from "../Components/LoginForm.tsx";
@@ -32,21 +32,22 @@ export function LoginPage(){
         }catch (err) {
             console.log(err)
         }
-        // <Navigate to="/"/>
     }
 
 
     return(
-        <>
-            <Card sx={{p:2}}>
-                <form onSubmit={handleSubmit}>
-                    <Grid direction="column" gap={3} container alignItems="center" justifyContent="center" sx={{minHeight:'100vh'}}>
-                        <Typography variant="h4">Fill Your Details</Typography>
-                        <LoginForm currentUser={currentUser} setCurrentUser={setCurrentUser} />
-                    <Button variant="contained" type="submit">Submit</Button>
-                    </Grid>
-                </form>
+        <Box sx={{justifyContent:"center" , alignItems:"center", display:"flex", bgcolor:"#e8eaf6", overflowY:"hidden"}}>
+            <Card sx={{ width: 500, maxHeight : "full"}}>
+                <CardContent>
+                    <form onSubmit={handleSubmit} autoComplete="off">
+                        <Grid direction="column" gap={3} container alignItems="center" justifyContent="center" sx={{minHeight:'100vh'}}>
+                            <Typography variant="h4">Fill Your Details</Typography>
+                            <LoginForm currentUser={currentUser} setCurrentUser={setCurrentUser} />
+                            <Button variant="contained" type="submit">Submit</Button>
+                        </Grid>
+                    </form>
+                </CardContent>
             </Card>
-        </>
+        </Box>
     )
 }

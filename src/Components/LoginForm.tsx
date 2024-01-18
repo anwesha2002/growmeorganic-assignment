@@ -12,7 +12,7 @@ export function LoginForm({ currentUser, setCurrentUser } : LoginFormProps){
 
     return(
         <>
-            <FormControl>
+            <FormControl >
                 <FormLabel>Name</FormLabel>
                 <TextField value={currentUser.name} onChange={(e)=>{setCurrentUser({...currentUser, name : e.target.value})}} required type="text" label="required"/>
                 <FormHelperText>We'll never share your name.</FormHelperText>

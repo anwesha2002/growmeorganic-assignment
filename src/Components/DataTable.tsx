@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import {DataModel} from "../Model/DataModel.ts";
 import {TableDataApiFetch} from "../Data/Network/TableDataApiFetch.tsx";
 import {DataGrid, GridColDef} from "@mui/x-data-grid";
-import {Box} from "@mui/material";
+import {Box, Typography} from "@mui/material";
 
 
 
@@ -51,6 +51,7 @@ export function DataTable(){
         <>
             <div>
                 <Box sx={{height:"auto", maxWidth: "100%", m:3, mb:3 }}>
+                <Typography sx={{textAlign : "center", my:5}} variant="h6">Data Table</Typography>
                     <DataGrid
                         columns={columns}
                         rows={data}

@@ -5,7 +5,7 @@ import {
     AccordionSummary,
     Box,
     Checkbox as CheckboxMUI,
-    FormControlLabel
+    FormControlLabel, Typography
 } from "@mui/material";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import {useLocalStorage} from "../Context/LocalStorageContext.tsx";
@@ -43,6 +43,7 @@ export function DepartmentCheckbox(){
 
     return(
         <>
+            <Typography sx={{textAlign : "center", mt:5}} variant="h6">Department</Typography>
             {departments.map(dept => {
                 return (
                     <Box sx={{m:3}}>
